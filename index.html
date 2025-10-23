@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParSuniem</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 900px;
+      background-color: white;
+      padding: 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin: 40px 0;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 40px;
+      transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #333;
+    }
+
+    .dogs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px 20px;
+      text-align: center;
+    }
+
+    .dog img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .dog img:hover {
+      transform: scale(1.05);
+    }
+
+    .dog h3 {
+      margin: 10px 0 5px 0;
+      font-size: 18px;
+    }
+
+    .dog p {
+      margin: 0;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .footer {
+      text-align: right;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    .footer a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .dogs {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .dogs {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ParSuniem</h1>
+    <p class="subtitle">Vietne par suņiem. Noklikšķiniet uz bildes, lai uzzinātu vairāk par šķirni.</p>
+
+    <a href="aksesauri.html" class="btn">Aksesuāri Suņiem</a>
+
+    <div class="dogs">
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Afg%C4%81%C5%86u_kurts" target="_blank">
+          <img src="img/whatever1.png" alt="Afgāņu kurts">
+        </a>
+        <h3>Afgāņu kurts</h3>
+        <p>(Afghan Hound)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Basets" target="_blank">
+          <img src="img/whatever2.png" alt="Basets">
+        </a>
+        <h3>Basets</h3>
+        <p>(Basset Hound)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/%C4%8Cehu_terjers" target="_blank">
+          <img src="img/whatever3.png" alt="Čehu terjers">
+        </a>
+        <h3>Čehu terjers</h3>
+        <p>(Cesky Terrier)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Dobermanis" target="_blank">
+          <img src="img/whatever4.png" alt="Dobermanis">
+        </a>
+        <h3>Dobermanis</h3>
+        <p>(Doberman Pinscher)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Greihaunds" target="_blank">
+          <img src="img/whatever5.png" alt="Greihaunds">
+        </a>
+        <h3>Greihaunds</h3>
+        <p>(Greyhound)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Kerl_bigls" target="_blank">
+          <img src="img/whatever6.png" alt="Kerl bigls">
+        </a>
+        <h3>Kerl bigls</h3>
+        <p>(Harrier)</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      Bildes ņemtas no <a href="https://www.whisker.lv/sunu-skirnes/" target="_blank">whisker.lv</a>
+    </div>
+  </div>
+</body>
+</html>
