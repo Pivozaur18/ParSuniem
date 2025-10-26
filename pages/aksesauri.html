@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aksesuāri Suņiem</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Aksesuāri</h1>
+    <p class="subtitle">Aksesuāri suņiem.</p>
+
+    <div class="gallery">
+      <div class="item">
+        <img src="{{ url_for('static', filename='img/whatever7.png') }}" alt="Afgāņu kurts">
+      </div>
+      <div class="item">
+        <img src="{{ url_for('static', filename='img/whatever8.png') }}" alt="Afgāņu kurts">
+      </div>
+
+      <div class="caption">
+        <strong>Suņu apkakles</strong>
+        <p>(Dog Collars)</p>
+      </div>
+
+      <div class="item">
+        <img src="{{ url_for('static', filename='img/whatever9.png') }}" alt="Afgāņu kurts">
+      </div>
+      <div class="item">
+        <img src="{{ url_for('static', filename='img/whatever10.png') }}" alt="Afgāņu kurts">
+      </div>
+
+      <div class="caption">
+        <strong>Apģērbi suņiem</strong>
+        <p>(Clothes for dogs)</p>
+      </div>
+    </div>
+    <a href="{{ url_for('home') }}" class="back">← Atpakaļ uz suņiem</a>
+  </div>
+</body>
+</html>

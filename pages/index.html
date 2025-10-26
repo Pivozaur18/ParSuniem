@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParSuniem</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>ParSuniem</h1>
+    <p class="subtitle">Vietne par suņiem. Noklikšķiniet uz bildes, lai uzzinātu vairāk par šķirni.</p>
+    <a href="{{ url_for('aksesauri') }}" class="btn">Aksesuāri Suņiem</a>
+    <div class="dogs">
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Afg%C4%81%C5%86u_kurts" target="_blank">
+          <img src="{{ url_for('static', filename='img/whatever1.png') }}" alt="Afgāņu kurts">
+        </a>
+        <h3>Afgāņu kurts</h3>
+        <p>(Afghan Hound)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Basets" target="_blank">
+          <img src="{{ url_for('static', filename='img/whatever2.png') }}" alt="Afgāņu kurts">
+        </a>
+        <h3>Basets</h3>
+        <p>(Basset Hound)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/%C4%8Cehu_terjers" target="_blank">
+          <img src="{{ url_for('static', filename='img/whatever3.png') }}" alt="Afgāņu kurts">
+        </a>
+        <h3>Čehu terjers</h3>
+        <p>(Cesky Terrier)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Dobermanis" target="_blank">
+          <img src="{{ url_for('static', filename='img/whatever4.png') }}" alt="Afgāņu kurts">
+        </a>
+        <h3>Dobermanis</h3>
+        <p>(Doberman Pinscher)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Greihaunds" target="_blank">
+          <img src="{{ url_for('static', filename='img/whatever5.png') }}" alt="Afgāņu kurts">
+        </a>
+        <h3>Greihaunds</h3>
+        <p>(Greyhound)</p>
+      </div>
+
+      <div class="dog">
+        <a href="https://lv.wikipedia.org/wiki/Kerl_bigls" target="_blank">
+          <img src="{{ url_for('static', filename='img/whatever6.png') }}" alt="Afgāņu kurts">
+        </a>
+        <h3>Kerl bigls</h3>
+        <p>(Harrier)</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      Bildes ņemtas no <a href="https://www.whisker.lv/sunu-skirnes/" target="_blank">whisker.lv</a>
+    </div>
+  </div>
+</body>
+</html>
